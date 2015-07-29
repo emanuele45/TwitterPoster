@@ -126,4 +126,9 @@ class TwitterPoster_Integrate
 			unset($_POST['twitter_select_boards']);
 		}
 	}
+
+	public static function integrate_credits(&$credits)
+	{
+		$credits['software'][] = '<a href="https://github.com/ricardoper/TwitterOAuth">TwitterOAuth</a> | &copy; 2013 Ricardo Pereira | Licensed under <a href="https://github.com/ricardoper/TwitterOAuth/blob/v2.1.3/LICENSE">The MIT License (MIT)</a>';
+	}
 }

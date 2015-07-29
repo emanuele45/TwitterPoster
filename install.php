@@ -25,6 +25,11 @@ $hooks = array(
 		'TwitterPoster_Integrate::integrate_save_general_mod_settings',
 		'SUBSDIR/TwitterPoster.integrate.php',
 	),
+	array(
+		'integrate_credits',
+		'TwitterPoster_Integrate::integrate_credits',
+		'SUBSDIR/TwitterPoster.integrate.php',
+	),
 );
 $mod_name = 'Twitter Poster';
 
