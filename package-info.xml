@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.elkarte.net/site/package-info">
+<package-info xmlns="http://www.elkarte.net/site/package-info" xmlns:elk="http://www.elkarte.net/">
+	<license><![CDATA[
+/**
+ * Twitter Poster
+ *
+ * @author emanuele
+ * @license   BSD http://opensource.org/licenses/BSD-3-Clause
+ *
+ * @version 0.0.1
+ */
+	]]></license>
+	<id>emanuele:twitter_poster</id>
+	<name>Twitter Poster</name>
+	<version>0.0.1</version>
+	<type>modification</type>
+	<install for="1.0 - 1.0.99">
+		<require-dir name="TwitterOAuth" destination="EXTDIR" />
+		<require-file name="TwitterPoster.integrate.php" destination="SUBSDIR" />
+		<require-file name="TwitterPoster.english.php" destination="LANGUAGEDIR/english" />
+	</install>
+	<uninstall for="1.0 - 1.0.99">
+		<remove-dir name="EXTDIR/TwitterOAuth" />
+		<remove-file name="SUBSDIR/TwitterPoster.integrate.php" />
+		<remove-file name="LANGUAGEDIR/english/TwitterPoster.english.php" />
+	</uninstall>
+</package-info>
